@@ -1,13 +1,19 @@
 
+import Data from './api\'s/Data'
 import './App.css'
-import Data from './Data'
+
+import ToggleVisibilityPage from './pages/Task2'
+import UserDashboard from './pages/Task3'
 
 function App() {
 
 
   return (
     <>
-      <Data />
+      {/* <Data /> */}
+
+      {/* <ToggleVisibilityPage /> */}
+      <UserDashboard />
 
     </>
   )
