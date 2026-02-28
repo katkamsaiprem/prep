@@ -1,11 +1,13 @@
 
 import './App.css'
+import Data from './Data'
 
 function App() {
 
 
   return (
     <>
+      <Data />
 
     </>
   )
