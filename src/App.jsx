@@ -1,9 +1,8 @@
 
-import Data from './api\'s/Data'
 import './App.css'
+import UserDashboard from './Day1/api\'s/pages/Task3'
 
-import ToggleVisibilityPage from './pages/Task2'
-import UserDashboard from './pages/Task3'
+
 
 function App() {
 

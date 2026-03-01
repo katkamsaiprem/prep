@@ -1,4 +1,4 @@
-import ToggleVisibility from "@/components/ToggleVisibility";
+import ToggleVisibility from "@/Day1/api's/components/ToggleVisibility";
 
 const ToggleVisibilityPage = () => {
 

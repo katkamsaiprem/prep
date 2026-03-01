@@ -1,6 +1,6 @@
-import UserCard from "@/components/UserCard";
-import usersInfo from "@/Data/UsersInfo";
-import { promoteUser } from "@/utils/RoleUpdateFn";
+import UserCard from "@/Day1/api's/components/UserCard";
+import usersInfo from "@/Day1/api's/Data/UsersInfo";
+import { promoteUser } from "@/Day1/api's/utils/RoleUpdateFn";
 import { useState } from "react";
 const UserDashboard = () => {
 

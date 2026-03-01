@@ -1,5 +1,5 @@
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import { Badge } from "@/Day1/api's/components/ui/badge"
+import { Button } from "@/Day1/api's/components/ui/button"
 import {
     Card,
     CardAction,
@@ -7,7 +7,7 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card"
+} from "@/Day1/api's/components/ui/card"
 
 export function CardImage({ productInfo, addToCartHandler }) {
 
