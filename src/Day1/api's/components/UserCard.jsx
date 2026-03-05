@@ -14,7 +14,7 @@ const UserCard = ({ user, onPromote }) => {
                     : "bg-indigo-500 text-white hover:bg-indigo-600 cursor-pointer"
                     }`}
             >
-                {isPromoted ? "Promoted ✓" : "Promote"}
+                {isPromoted ? "Promoted " : "Promote"}
             </button>
         </div>
     );

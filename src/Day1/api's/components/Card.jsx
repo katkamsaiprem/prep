@@ -8,8 +8,10 @@ import {
     CardHeader,
     CardTitle,
 } from "@/Day1/api's/components/ui/card"
+import { useCart } from "@/Day1/api's/context/CartContext"
 
-export function CardImage({ productInfo, addToCartHandler }) {
+export function CardImage({ productInfo }) {
+    const { dispatch } = useCart();
 
     return (
         <Card className="relative mx-auto w-full max-w-sm pt-0 flex flex-col justify-between shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -47,7 +49,7 @@ export function CardImage({ productInfo, addToCartHandler }) {
                 {/* Rating */}
                 {productInfo.rating && (
                     <div className="flex items-center gap-1 mt-1 text-xs text-muted-foreground">
-                        <span className="text-yellow-500">⭐</span>
+                        <span className="text-yellow-500">Star</span>
                         <span>{productInfo.rating.rate}</span>
                         <span>({productInfo.rating.count} reviews)</span>
                     </div>
@@ -58,7 +60,7 @@ export function CardImage({ productInfo, addToCartHandler }) {
             <CardFooter>
                 <Button
                     className="w-full"
-                    onClick={() => addToCartHandler(productInfo.title)}
+                    onClick={() => dispatch({ type: "ADD_ITEM", item: productInfo })}
                 >
                     Add To Cart
                 </Button>
